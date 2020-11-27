@@ -1,12 +1,15 @@
 body {
 	background: #000000;
 	color: #d39f75;
+	overflow: hidden;
 }
 .wrapper {
 	position: absolute;
 	display: block;
 	height: 100vh;
-	left: 30%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
@@ -17,14 +20,23 @@ h1 {
 	line-height: 1;
 	font-weight: 700;
 	padding: 0px;
-	margin-top: -15%;
+	margin-top: -5%;
 }
-
+@media screen and (max-width: 678px) {
+	h1,
+	.icons, 
+	p.update {
+		padding-left: 35%;
+	}
+	h1{
+		margin-top: -20%;
+	}
+}
 .dot {
 	color: #d39f75;
 }
 
-p {
+p.update {
 	text-align: center;
 	margin: 18px;
 	font-family: "Muli", sans-serif;
