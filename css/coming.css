@@ -22,7 +22,19 @@ h1 {
 	padding: 0px;
 	margin-top: -5%;
 }
-@media screen and (max-width: 678px) {
+
+/* 9643447769 Amar Pal */
+
+@media screen and (max-width: 486px){
+	h1, .icons {
+		margin-left: 5%;
+	}
+	.icons{
+		margin-top: 7%;
+	}
+}
+
+/* @media screen and (min-width: 321px) and (max-width: 760px) { {
 	h1,
 	.icons, 
 	p.update {
@@ -31,17 +43,13 @@ h1 {
 	h1{
 		margin-top: -20%;
 	}
-}
+}  */
+
+
 .dot {
 	color: #d39f75;
 }
 
-p.update {
-	text-align: center;
-	margin: 18px;
-	font-family: "Muli", sans-serif;
-	font-weight: normal;
-}
 
 .icons {
 	text-align: center;
@@ -59,6 +67,7 @@ p.update {
 	transition: all 200ms ease;
 	text-decoration: none;
 	position: relative;
+	margin-top: 3%;
 }
 
 .icons i:hover,
