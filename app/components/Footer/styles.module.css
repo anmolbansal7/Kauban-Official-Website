@@ -1,0 +1,57 @@
+.footer{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_main{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 40%;
+}
+
+.links{
+    display: flex;
+    width: 30%;
+    padding-top: 24px;
+}
+
+.links_section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-size: var(--font-size-xl);
+}
+
+.about{
+    color: var(--gray);
+}
+
+.contact{
+    color: var(--gray);
+}
+
+.heading{
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.registered{
+    background-color: #f8f8f8;
+    padding: 24px 48px;
+}
