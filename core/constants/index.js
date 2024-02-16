@@ -19,17 +19,12 @@ export const NAVBAR_LINKS = [
 export const SOCIAL_LINKS = [
      {
         key: 'Instagram',
-        label: 'Home',
-        href: '/'
+        label: 'Instagram',
+        href: 'https://www.instagram.com/kaubandev'
     },
     {
         key: 'Linkedin',
-        label: 'Our Story',
-        href: '/about'
-    },
-    {
-        key: 'Twitter',
-        label: 'Residences',
-        href: '/residences'
+        label: 'Linkedin',
+        href: ''
     },
 ]

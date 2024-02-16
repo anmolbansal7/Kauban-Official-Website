@@ -53,6 +53,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 150%;
 }
 
 
@@ -62,6 +63,7 @@ body {
   overflow-x: hidden;
   font-family: 'Mazzard', sans-serif;
   font-size: var(--font-size-lg);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -78,4 +80,15 @@ a {
 .main{
   padding-top: 88px;
   min-height: 90vh;
+}
+
+.emphasized{
+	color: var(--black);
+	font-weight: 500;
+	padding: 4px;
+	transition: 0.2s ease;
+}
+
+.emphasized:hover{
+	background-color: var(--kauban-brown);
 }

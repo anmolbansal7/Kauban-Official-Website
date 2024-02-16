@@ -1,57 +1,72 @@
-.footer{
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.footer_main{
-    display: flex;
-    justify-content: space-between;
-    padding: 48px;
+.footer {
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.details{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 40%;
+.footer_main {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 100px 64px 100px;
 }
 
-.links{
-    display: flex;
-    width: 30%;
-    padding-top: 24px;
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex: 2;
 }
 
-.links_section{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.about {
+	font-size: 18px;
+	width: 60%;
+	color: var(--gray);
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    font-size: var(--font-size-xl);
+.contact span {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding-bottom: 12px;
 }
 
-.about{
-    color: var(--gray);
+.links {
+	flex: 1;
+	margin-top: 48px;
+	display: flex;
+	gap: 100px;
 }
 
-.contact{
-    color: var(--gray);
+.links_section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	color: var(--gray);
 }
 
-.heading{
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    letter-spacing: 2px;
+.links_heading {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--black);
 }
-.registered{
-    background-color: #f8f8f8;
-    padding: 24px 48px;
+
+.registered {
+	background-color: #f8f8f8;
+	padding: 24px 100px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+	/* iPhone 14 Pro Max */
+	.footer_main {
+		flex-direction: column;
+		padding: 24px 48px 48px 48px;
+	}
+	.about {
+		width: 100%;
+	}
+	.registered {
+		text-align: center;
+	}
 }

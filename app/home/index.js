@@ -1,17 +1,35 @@
+import Image from "next/image";
+import About from "./components/About";
+import End from "./components/End";
+import Info from "./components/Info";
+import Projects from "./components/Projects";
 import styles from "./styles.module.css";
 
-const Landing = () => {
-  return (
-    <main className={styles.landing}>
-      <div className={styles.content}>
-        Where Dreams Unfold
-        <br />
-        and Memories Begin
-      </div>
-      
-      <div className={styles.mouse}></div>
-    </main>
-  );
-}
+const Home = () => {
+	return (
+		<main className={styles.home}>
+			<div className={styles.landing}>
+				<div className={styles.logo}>
+					<Image
+						alt="Kauban"
+						src="/assets/kauban_white.png"
+						width={174}
+						height={68}
+						priority
+					></Image>
+				</div>
+				<div className={styles.content}>
+					Where Dreams Unfold <br /> and Memories Begin
+				</div>
+				<div className={styles.mouse} />
+			</div>
+			<Info />
+			<About />
+			<Projects />
+			<End />
+			<div className={styles.end_image}></div>
+		</main>
+	);
+};
 
-export default Landing;
+export default Home;

@@ -1,0 +1,31 @@
+.button {
+    position: absolute;
+	width: 20%;
+	height: 50px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	right: 0;
+	top: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.button > p {
+	display: none;
+	color: white;
+	margin: 0px;
+	text-transform: uppercase;
+	transition: color 0.5s;
+}
+
+.button > svg {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.button > svg line {
+	transition: stroke 0.5s;
+}

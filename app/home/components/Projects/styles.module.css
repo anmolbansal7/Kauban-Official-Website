@@ -1,0 +1,80 @@
+
+.projects{
+    padding: 64px 100px;
+}
+
+.project_head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.project_head_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_heading{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.projects_sub{
+    width: 70%;
+    font-size: 18px;
+    padding: 16px 0px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+.card_image{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_label{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 12px 0px;
+}
+
+.card_description{
+    font-size: 18px;
+    color: var(--gray);
+}
+
+@media only screen and (max-width: 576px) {
+	/* iPhone 14 Pro Max */
+	.projects {
+		padding: 24px 48px;
+	}
+    .project_head{
+        flex-direction: column;
+    }
+    .projects_heading{
+        font-size: 32px;
+    }
+    .projects_sub{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+	
+}

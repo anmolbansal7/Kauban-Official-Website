@@ -1,0 +1,51 @@
+.about {
+	background-color: #f8f8f8;
+	padding: 64px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about_heading {
+	font-size: 44px;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 32px;
+	width: 60%;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 30%;
+	margin: 20px;
+}
+
+.card h1 {
+	font-size: 28px;
+	font-weight: 500;
+	padding: 12px 0px;
+}
+
+.card p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 576px) {
+	/* iPhone 14 Pro Max */
+	.about {
+		padding: 64px 48px;
+	}
+	.about_heading {
+		width: 100%;
+		font-size: 32px;
+	}
+	.card {
+		width: 100%;
+	}
+}
