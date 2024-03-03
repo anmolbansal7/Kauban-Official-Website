@@ -10,9 +10,9 @@ export const NAVBAR_LINKS = [
         href: '/about'
     },
     {
-        key: 'residences',
-        label: 'Residences',
-        href: '/residences'
+        key: 'projects',
+        label: 'Projects',
+        href: '/projects'
     },
 ]
 

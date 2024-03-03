@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 const Home = () => {
 	return (
-		<main className={styles.home}>
+		<main>
 			<div className={styles.landing}>
 				<div className={styles.logo}>
 					<Image
@@ -27,7 +27,7 @@ const Home = () => {
 			<About />
 			<Projects />
 			<End />
-			<div className={styles.end_image}></div>
+			<div className="end_image"></div>
 		</main>
 	);
 };

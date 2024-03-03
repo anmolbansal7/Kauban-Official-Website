@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    gap: 24px;
+    width: 45%;
+    margin: 8px 28px 8px 0px;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.designation{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.info{
+    margin-top: 24px;
+    font-size: 18px;
+}

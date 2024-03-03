@@ -18,7 +18,7 @@ const End = () => {
 					set new standards of at home living.
 				</span>
 				<br/><br/>
-				Just as the sound of a bell rings out when a persimmon is
+				Just as the sound of a bell, rings out when a persimmon is
 				struck, our homes resonate with
 				<span className="emphasized">
 					timeless beauty and tranquility.

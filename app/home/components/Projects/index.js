@@ -10,7 +10,7 @@ const Projects = () => {
 			<div className={styles.project_head}>
 				<div className={styles.project_head_left}>
 					<div className={styles.projects_heading}>
-						Our Premium Residences
+						Our Premium Projects
 					</div>
 					<div className={styles.projects_sub}>
 						Get to know us at Kauban. Our journey is rooted in
@@ -23,7 +23,7 @@ const Projects = () => {
 						type="hollow"
 						label="Explore More"
 						icon={MdOutlineArrowOutward}
-						href="/residences"
+						href="/projects"
 					></Button>
 				</div>
 			</div>

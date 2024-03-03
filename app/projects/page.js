@@ -1,7 +1,7 @@
 const Page = () => {
   return (
     <main className="main">
-      Residences
+      Projects
     </main>
   )
 };
