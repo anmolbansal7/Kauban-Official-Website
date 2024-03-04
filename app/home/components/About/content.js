@@ -38,7 +38,7 @@ const CONTENT = [
 	},
 	{
 		icon: FaBuildingShield,
-		heading: "Earthquake Resistant",
+		heading: "Robust Protection",
 		content:
 			"Providing you with peace of mind and a secure haven in even the most challenging environments.",
 	},

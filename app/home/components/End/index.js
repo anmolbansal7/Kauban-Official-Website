@@ -15,7 +15,7 @@ const End = () => {
 				we uphold the virtues of excellence in everything we do. From our sustainable practices to
 				our innovative designs, we strive to exceed expectations and
 				<span className="emphasized">
-					set new standards of at home living.
+					set new standards of &#39;at home living&#39;.
 				</span>
 				<br/><br/>
 				Just as the sound of a bell, rings out when a persimmon is

@@ -1,0 +1,22 @@
+.top_image {
+	background-image: url("/assets/info_image.png");
+	background-size: cover;
+	background-position: center center;
+	height: 40vh;
+	display: flex;
+	padding: 24px 100px;
+	align-items: flex-end;
+	font-size: 48px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.card_container {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	justify-content: center;
+	align-items: center;
+	padding: 48px 100px;
+	font-size: 18px;
+}

@@ -29,10 +29,11 @@ const Projects = () => {
 			</div>
 
 			<div className={styles.cards}>
-				{RESIDENCES.slice(0, 3).map((item) => {
+				{RESIDENCES.slice(-3).map((item) => {
+					const link_url = 'project/' + item?.id;
 					return (
 						<Link
-							href={item?.link}
+							href={link_url}
 							className={styles.card}
 							key={item?.label}
 						>

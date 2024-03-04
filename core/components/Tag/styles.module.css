@@ -1,0 +1,10 @@
+.tag_container {
+	display: flex;
+	gap: 8px;
+}
+
+.tag {
+	font-size: 16px;
+	padding: 4px 8px;
+	border-radius: 16px;
+}

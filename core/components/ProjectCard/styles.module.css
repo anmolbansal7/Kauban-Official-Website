@@ -1,0 +1,26 @@
+.card {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.info {
+	padding: 12px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.label {
+	font-weight: 500;
+	font-size: 32px;
+}
+
+.description {
+	margin-bottom: 12px;
+}
+
+.button {
+	width: 30%;
+}
