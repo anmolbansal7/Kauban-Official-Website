@@ -3,27 +3,19 @@ description: "Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependenci
 runs:
     using: "composite"
     steps:
-        - name: Check for package-lock.json
-          run: |
-              if [ ! -f "pnpm-lock.yaml" ]; then
-                echo "pnpm-lock.yaml not found. Generating it..."
-                pnpm install
-              fi
-          shell: bash
-
         - name: Setup Node.js ⚙️
           uses: actions/setup-node@v4
           with:
-              node-version: "20"
+              node-version: 20
 
         - name: Cache dependencies ⚡
           id: cache_dependencies
           uses: actions/cache@v3
           with:
-              path: ~/.pnpm-store
-              key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+              path: ~/.npm
+              key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
         - name: Install dependencies 🔧
           shell: bash
           if: steps.cache_dependencies.outputs.cache-hit != 'true'
-          run: pnpm install
+          run: npm ci
