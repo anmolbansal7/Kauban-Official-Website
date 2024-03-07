@@ -1,11 +1,12 @@
 .tag_container {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 8px;
 	padding: 12px 0px;
 }
 
 .tag {
-	font-size: 14px;
+	font-size: var(--font-size-xs);
 	padding: 4px 8px;
 	border-radius: 16px;
 	border: 2px solid var(--kauban-brown);

@@ -1,11 +1,7 @@
-.about {
-	/* padding-top: 92px; */
-	font-size: 32px;
-}
-
 .about_info {
 	padding: 24px 100px;
 	color: var(--gray);
+	font-size: var(--font-size-md1);
 }
 
 .about_info p {
@@ -16,20 +12,31 @@
 	margin-top: 48px;
 }
 
-.about_emphasized {
-	font-size: 42px;
+.large_emphasized {
+	font-size: var(--font-size-lg);
 	color: var(--black);
 	font-weight: 500;
 	padding: 4px;
 	transition: 0.2s ease;
 }
 
-.about_emphasized:hover {
+.large_emphasized:hover {
 	background-color: var(--kauban-brown);
 }
 
 .team {
 	padding: 36px 100px;
+}
+
+p.emphasized {
+	font-weight: 500;
+	font-size: var(--font-size-lg);
+	color: var(--black);
+}
+
+p.heading {
+	font-size: var(--font-size-xl);
+	font-weight: 500;
 }
 
 .card_container {
@@ -38,4 +45,14 @@
 	justify-content: space-between;
 	flex: 1;
 	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 576px) {
+	.about_info,
+	.team {
+		padding: 24px 36px;
+	}
+	.card_container {
+		flex-direction: column;
+	}
 }

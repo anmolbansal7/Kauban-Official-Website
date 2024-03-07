@@ -30,13 +30,16 @@ const Projects = () => {
 
 			<div className={styles.cards}>
 				{RESIDENCES.slice(-3).map((item) => {
-					const link_url = "project/" + item?.id;
+					const link_url = "projects/" + item?.id;
 					return (
 						<Link
 							href={link_url}
 							className={styles.card}
 							key={item?.label}
 						>
+							<div className={styles.status}>
+								{item?.status.toUpperCase()}
+							</div>
 							<div
 								className={styles.card_image}
 								style={{

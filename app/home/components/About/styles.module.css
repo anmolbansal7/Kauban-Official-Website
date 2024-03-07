@@ -7,7 +7,7 @@
 }
 
 .about_heading {
-	font-size: 44px;
+	font-size: var(--font-size-xl);
 	text-align: center;
 	font-weight: 500;
 	padding-bottom: 32px;
@@ -26,24 +26,23 @@
 }
 
 .card h1 {
-	font-size: 28px;
+	font-size: var(--font-size-lg);
 	font-weight: 500;
 	padding: 12px 0px;
 }
 
 .card p {
-	font-size: 18px;
+	font-size: var(--font-size-md);
 	font-weight: 400;
 }
 
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
 	.about {
-		padding: 64px 48px;
+		padding: 64px 36px;
 	}
 	.about_heading {
 		width: 100%;
-		font-size: 32px;
 	}
 	.card {
 		width: 100%;

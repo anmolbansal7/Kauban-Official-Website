@@ -6,39 +6,38 @@ import Button from "@/core/components/Button";
 import Image from "next/image";
 import { TbHomeHand } from "react-icons/tb";
 import RESIDENCES from "@/core/constants/residences";
-// import { useState } from "react";
-// import ResponsiveNav from "./ResponsiveNav";
-// import { isMobile } from "react-device-detect";
-// import { AnimatePresence } from "framer-motion";
-// import Stairs from "@/core/components/Stairs";
-// import Menu from "./Menu";
+import { useState } from "react";
+import ResponsiveNav from "./ResponsiveNav";
+import { isMobile } from "react-device-detect";
+import { AnimatePresence } from "framer-motion";
+import Stairs from "@/core/components/Stairs";
+import Menu from "./Menu";
 
 const Navbar = () => {
-	// const [menuIsOpen, setMenuIsOpen] = useState(false);
+	const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-	// if (isMobile) {
-	// 	return (
-	// 		<div>
-	// 			<ResponsiveNav
-	// 				openMenu={() => {
-	// 					setMenuIsOpen(true);
-	// 				}}
-	// 			></ResponsiveNav>
-	// 			<AnimatePresence mode="wait">
-	// 				{menuIsOpen && (
-	// 					<>
-	// 						<Stairs />
-	// 						<Menu
-	// 							closeMenu={() => {
-	// 								setMenuIsOpen(false);
-	// 							}}
-	// 						/>
-	// 					</>
-	// 				)}
-	// 			</AnimatePresence>
-	// 		</div>
-	// 	);
-	// }
+	if (isMobile) {
+		return (
+			<div>
+				<ResponsiveNav
+					openMenu={() => {
+						setMenuIsOpen(true);
+					}}
+				></ResponsiveNav>
+
+				{menuIsOpen && (
+					<>
+						<Stairs />
+						<Menu
+							closeMenu={() => {
+								setMenuIsOpen(false);
+							}}
+						/>
+					</>
+				)}
+			</div>
+		);
+	}
 
 	const latestProjectId = RESIDENCES[RESIDENCES.length - 1].id;
 

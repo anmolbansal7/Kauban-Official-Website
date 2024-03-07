@@ -19,7 +19,7 @@
 }
 
 .about {
-	font-size: 18px;
+	font-size: var(--font-size-md);
 	width: 60%;
 	color: var(--gray);
 }
@@ -46,7 +46,7 @@
 }
 
 .links_heading {
-	font-size: 20px;
+	font-size: var(--font-size-md1);
 	font-weight: 500;
 	color: var(--black);
 }
@@ -55,13 +55,14 @@
 	background-color: #f8f8f8;
 	padding: 24px 100px;
 	font-weight: 500;
+	font-size: var(--font-size-sm);
 }
 
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
 	.footer_main {
 		flex-direction: column;
-		padding: 24px 48px 48px 48px;
+		padding: 24px 36px;
 	}
 	.about {
 		width: 100%;

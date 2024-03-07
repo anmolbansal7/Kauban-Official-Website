@@ -4,6 +4,9 @@ import Button from "../Button";
 import Image from "next/image";
 import Tag from "../Tag";
 
+import { MdBed, MdCottage } from "react-icons/md";
+import Link from "next/link";
+
 const ProjectCard = ({ project = {} }) => {
 	const {
 		id = "",
@@ -19,23 +22,42 @@ const ProjectCard = ({ project = {} }) => {
 	} = project;
 
 	return (
-		<div className={styles.card}>
+		<Link
+			href={`/projects/${id}`}
+			className={styles.card}
+			title="Click to View Details"
+		>
 			<div className={styles.status}>{status.toUpperCase()}</div>
-			<Image
-				alt="Project Card"
-				src={image}
-				width={500}
-				height={320}
-				priority
-			></Image>
+			<div className={styles.image_container}>
+				<Image
+					className="custom-img"
+					alt="Project"
+					src={image}
+					fill={true}
+					priority
+				></Image>
+			</div>
 
 			<div className={styles.info}>
 				<div>
-					<div className={styles.label}>{label}</div>
+					<div className={styles.label}>
+						{label}{" "}
+						<MdOutlineArrowOutward style={{ color: "#4f4f4f" }} />
+					</div>
+
 					<div className={styles.description}>{description}</div>
 					<ul className={styles.information}>
-						<li>{bhk}</li>
-						<li>{size}</li>
+						<li>
+							<MdBed size={18} style={{ marginRight: "4px" }} />
+							{bhk}
+						</li>
+						<li>
+							<MdCottage
+								size={18}
+								style={{ marginRight: "4px" }}
+							/>
+							{size}
+						</li>
 						<li className={styles.price}>
 							Prices From: {price_hidden ? "On Request" : price}
 						</li>
@@ -43,14 +65,14 @@ const ProjectCard = ({ project = {} }) => {
 					<Tag content={tags}></Tag>
 				</div>
 
-				<Button
-					type="hollow"
-					label="View Details"
+				{/* <Button
+					type="fill"
+					// label="View Details"
 					icon={MdOutlineArrowOutward}
 					href={`/projects/${id}`}
-				></Button>
+				></Button> */}
 			</div>
-		</div>
+		</Link>
 	);
 };
 

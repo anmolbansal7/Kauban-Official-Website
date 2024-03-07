@@ -9,3 +9,9 @@
 	gap: 20px;
 	padding: 20px;
 }
+
+@media only screen and (max-width: 576px) {
+	.bento_container {
+		display: none;
+	}
+}

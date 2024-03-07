@@ -7,9 +7,12 @@ const ImageHeader = ({
 	project_info = {},
 }) => {
 	const { description = "", status = "" } = project_info || {};
+
 	return (
 		<div
-			className={styles.top_image}
+			className={`${styles.top_image} ${
+				project ? styles.top_image_responsive : ""
+			}`}
 			style={{
 				backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(${image_url})`,
 			}}

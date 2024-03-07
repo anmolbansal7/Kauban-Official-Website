@@ -10,13 +10,13 @@
 
 .info_header_main {
 	width: 30%;
-	font-size: 44px;
+	font-size: var(--font-size-xl);
 	font-weight: 500;
 }
 
 .info_header_sub {
 	width: 50%;
-	font-size: 22px;
+	font-size: var(--font-size-md1);
 	font-weight: 400;
 }
 
@@ -31,14 +31,13 @@
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
 	.info {
-		padding: 24px 48px;
+		padding: 24px 36px;
 	}
 	.info_header {
 		flex-direction: column;
 	}
 	.info_header_main {
 		width: 100%;
-		font-size: 32px;
 		padding-bottom: 24px;
 		text-align: center;
 	}

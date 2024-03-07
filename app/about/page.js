@@ -1,12 +1,13 @@
 import TeamCard from "@/core/components/TeamCard";
-import styles from "./styles.module.css";
 import TEAM from "@/core/constants/team";
 import ImageHeader from "@/core/components/ImageHeader";
 import ImageFooter from "@/core/components/ImageFooter";
 
+import styles from "./styles.module.css";
+
 const Page = () => {
 	return (
-		<main className={styles.about}>
+		<main>
 			<ImageHeader
 				image_url="/assets/info_image.png"
 				heading="Our Story"
@@ -14,17 +15,17 @@ const Page = () => {
 			<div className={styles.about_info}>
 				<p>
 					Since our inception in
-					<span className={styles.about_emphasized}>2020</span>,
+					<span className={styles.large_emphasized}>2020,</span>
 					Kauban has dedicated itself to crafting homes embodying the
 					essence of companionship. Each builder floor reflects
-					<span className={styles.about_emphasized}>
+					<span className={styles.large_emphasized}>
 						thoughtful design,
 					</span>
-					<span className={styles.about_emphasized}>
+					<span className={styles.large_emphasized}>
 						functional layouts,
 					</span>
 					and a
-					<span className={styles.about_emphasized}>
+					<span className={styles.large_emphasized}>
 						welcoming atmosphere,
 					</span>
 					ensuring residents feel connected and supported.
@@ -56,11 +57,11 @@ const Page = () => {
 					</span>
 				</p>
 
-				<h4>Welcome home to Kauban.</h4>
+				<p className={styles.emphasized}>Welcome home to Kauban.</p>
 			</div>
 
 			<div className={styles.team}>
-				<h2>Leadership</h2>
+				<p className={styles.heading}>Leadership</p>
 				<div className={styles.card_container}>
 					{TEAM.map((team_member) => (
 						<TeamCard

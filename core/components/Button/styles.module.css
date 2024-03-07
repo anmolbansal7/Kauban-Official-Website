@@ -2,7 +2,7 @@
 	border-radius: 24px;
 	padding: 14px 24px 12px 24px;
 	display: flex;
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-sm);
 	font-family: var(--font-family);
 	font-weight: 500;
 	transition: ease 0.5s;

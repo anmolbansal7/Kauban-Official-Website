@@ -20,16 +20,15 @@
 
 .end_right {
 	flex: 2;
-	font-size: 22px;
+	font-size: var(--font-size-md1);
 	color: var(--gray);
-	font-weight: 400;
 }
 
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
 	.end {
 		flex-direction: column;
-		padding: 24px 48px;
+		padding: 24px 36px;
 	}
 	.end_left {
 		flex: 1;
@@ -39,10 +38,6 @@
 	.end_left_image {
 		width: 80vw;
 		height: 50vh;
-	}
-
-	.heading {
-		font-size: 32px;
 	}
 	.end_right {
 		flex: 1;

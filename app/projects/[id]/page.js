@@ -25,7 +25,7 @@ const Page = ({ params = {} }) => {
 	}
 
 	return (
-		<div>
+		<main>
 			<ImageHeader
 				image_url="/assets/info_image.png"
 				heading={label}
@@ -51,7 +51,7 @@ const Page = ({ params = {} }) => {
 				</div>
 			</div>
 			<ImageFooter image_url="/assets/info_image.png" />
-		</div>
+		</main>
 	);
 };
 
