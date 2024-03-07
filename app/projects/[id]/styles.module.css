@@ -1,0 +1,11 @@
+.container {
+	padding: 24px 100px;
+}
+
+.bento_container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: 300px;
+	gap: 20px;
+	padding: 20px;
+}

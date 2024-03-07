@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "@/core/components/Button";
 import Image from "next/image";
 import { TbHomeHand } from "react-icons/tb";
+import RESIDENCES from "@/core/constants/residences";
 // import { useState } from "react";
 // import ResponsiveNav from "./ResponsiveNav";
 // import { isMobile } from "react-device-detect";
@@ -39,6 +40,8 @@ const Navbar = () => {
 	// 	);
 	// }
 
+	const latestProjectId = RESIDENCES[RESIDENCES.length - 1].id;
+
 	return (
 		<nav className={styles.navbar}>
 			<Link href="/" className={styles.logo}>
@@ -65,6 +68,7 @@ const Navbar = () => {
 				type="filled"
 				label="Go to Latest Project"
 				icon={TbHomeHand}
+				href={`/projects/${latestProjectId}`}
 			></Button>
 		</nav>
 	);

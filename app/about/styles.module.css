@@ -1,19 +1,6 @@
 .about {
 	/* padding-top: 92px; */
-    font-size: 32px;
-}
-
-.top_image {
-	background-image: url("/assets/info_image.png");
-	background-size: cover;
-	background-position: center center;
-	height: 40vh;
-    display: flex;
-    padding: 24px 100px;
-    align-items: flex-end;
-    font-size: 48px;
-    font-weight: 500;
-    color: var(--white);
+	font-size: 32px;
 }
 
 .about_info {

@@ -1,13 +1,16 @@
 import TeamCard from "@/core/components/TeamCard";
 import styles from "./styles.module.css";
 import TEAM from "@/core/constants/team";
+import ImageHeader from "@/core/components/ImageHeader";
+import ImageFooter from "@/core/components/ImageFooter";
 
 const Page = () => {
 	return (
-    <main className={styles.about}>
-      <div className={styles.top_image}>
-        Our Story
-      </div>
+		<main className={styles.about}>
+			<ImageHeader
+				image_url="/assets/info_image.png"
+				heading="Our Story"
+			></ImageHeader>
 			<div className={styles.about_info}>
 				<p>
 					Since our inception in
@@ -57,16 +60,17 @@ const Page = () => {
 			</div>
 
 			<div className={styles.team}>
-        <h2>Leadership</h2>
-        <div className={styles.card_container}>
-          {TEAM.map((team_member) => (
-            <TeamCard key={team_member.name} team_member={team_member}></TeamCard>
-        ))}
-				
-        </div>
-        
-      </div>
-      <div className="end_image"></div>
+				<h2>Leadership</h2>
+				<div className={styles.card_container}>
+					{TEAM.map((team_member) => (
+						<TeamCard
+							key={team_member.name}
+							team_member={team_member}
+						></TeamCard>
+					))}
+				</div>
+			</div>
+			<ImageFooter image_url="/assets/info_image.png" />
 		</main>
 	);
 };

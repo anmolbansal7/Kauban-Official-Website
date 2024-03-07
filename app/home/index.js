@@ -4,6 +4,7 @@ import End from "./components/End";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
 import styles from "./styles.module.css";
+import ImageFooter from "@/core/components/ImageFooter";
 
 const Home = () => {
 	return (
@@ -27,7 +28,7 @@ const Home = () => {
 			<About />
 			<Projects />
 			<End />
-			<div className="end_image"></div>
+			<ImageFooter image_url="/assets/info_image.png" />
 		</main>
 	);
 };

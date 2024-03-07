@@ -75,15 +75,6 @@ a {
   }
 } */
 
-.end_image {
-	margin: 64px 0px;
-	background-image: url("/assets/info_image.png");
-	background-size: cover;
-	background-position: center center;
-	width: 100%;
-	height: 600px;
-}
-
 .emphasized {
 	color: var(--black);
 	font-weight: 500;
