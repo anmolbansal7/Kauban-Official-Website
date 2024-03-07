@@ -30,7 +30,7 @@ const Projects = () => {
 
 			<div className={styles.cards}>
 				{RESIDENCES.slice(-3).map((item) => {
-					const link_url = 'project/' + item?.id;
+					const link_url = "project/" + item?.id;
 					return (
 						<Link
 							href={link_url}
@@ -46,7 +46,9 @@ const Projects = () => {
 
 							<div className={styles.card_label}>
 								{item?.label}
-								<MdOutlineArrowOutward style={{color:"#4f4f4f"}} />
+								<MdOutlineArrowOutward
+									style={{ color: "#4f4f4f" }}
+								/>
 							</div>
 
 							<div className={styles.card_description}>

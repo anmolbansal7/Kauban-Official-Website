@@ -14,8 +14,8 @@ import RESIDENCES from "@/core/constants/residences";
 // import Menu from "./Menu";
 
 const Navbar = () => {
-  // const [menuIsOpen, setMenuIsOpen] = useState(false);
-  
+	// const [menuIsOpen, setMenuIsOpen] = useState(false);
+
 	// if (isMobile) {
 	// 	return (
 	// 		<div>

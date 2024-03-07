@@ -11,7 +11,7 @@
 }
 
 .end_left_image {
-	background-image: url('/assets/info_image.png');
+	background-image: url("/assets/info_image.png");
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
@@ -25,27 +25,26 @@
 	font-weight: 400;
 }
 
-
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
 	.end {
 		flex-direction: column;
 		padding: 24px 48px;
 	}
-	.end_left{
-        flex: 1;
-        margin-right: 0;
-        margin-bottom: 24px;
-    }
-	.end_left_image{
+	.end_left {
+		flex: 1;
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+	.end_left_image {
 		width: 80vw;
 		height: 50vh;
 	}
-    
-	.heading{
+
+	.heading {
 		font-size: 32px;
 	}
-    .end_right{
-        flex: 1;
-    }
+	.end_right {
+		flex: 1;
+	}
 }

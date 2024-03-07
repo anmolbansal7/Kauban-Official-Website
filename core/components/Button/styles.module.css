@@ -1,5 +1,5 @@
 .button {
-    border-radius: 24px;
+	border-radius: 24px;
 	padding: 14px 24px 12px 24px;
 	display: flex;
 	font-size: var(--font-size-lg);
@@ -21,7 +21,7 @@
 }
 
 .button_filled {
-    border: none;
+	border: none;
 	background-color: var(--white);
 }
 

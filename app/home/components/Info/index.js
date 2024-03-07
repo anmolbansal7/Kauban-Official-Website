@@ -9,11 +9,9 @@ const Info = () => {
 				</span>
 				<span className={styles.info_header_sub}>
 					Introducing Kauban, where companionship meets quality
-          living. Specializing in
-          <span className="emphasized">
-            builder floors,
-          </span>we create inviting
-					spaces that foster community and comfort.
+					living. Specializing in
+					<span className="emphasized">builder floors,</span>we create
+					inviting spaces that foster community and comfort.
 				</span>
 			</div>
 

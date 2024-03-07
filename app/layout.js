@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 			<body>
 				<Navbar />
 				{/* <AnimatePresence mode="wait"> */}
-					{children}
+				{children}
 				{/* </AnimatePresence> */}
 				<Footer />
 			</body>

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from './styles.module.css';
-import { opacity, slideLeft, mountAnim } from '@/core/components/Stairs/anim';
+import styles from "./styles.module.css";
+import { opacity, slideLeft, mountAnim } from "@/core/components/Stairs/anim";
 
 const Menu = ({ closeMenu }) => {
 	return (
