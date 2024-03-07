@@ -23,3 +23,34 @@
 	letter-spacing: 8px;
 	font-size: var(--font-size-md);
 }
+
+.hamburger_menu {
+	display: none;
+}
+
+.hamburger_menu button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+	.navbar {
+		padding: 16px 24px;
+		background-color: var(--black);
+	}
+
+	.links,
+	.navbar_button {
+		display: none;
+	}
+
+	.logo_image {
+		width: 120px;
+		height: auto;
+	}
+
+	.hamburger_menu {
+		display: block;
+	}
+}

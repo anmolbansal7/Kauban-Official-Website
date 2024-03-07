@@ -10,15 +10,6 @@ const Home = () => {
 	return (
 		<main>
 			<div className={styles.landing}>
-				<div className={styles.logo}>
-					<Image
-						alt="Kauban"
-						src="/assets/kauban_white.png"
-						width={174}
-						height={68}
-						priority
-					></Image>
-				</div>
 				<div className={styles.content}>
 					Where Dreams Unfold <br /> and Memories Begin
 				</div>

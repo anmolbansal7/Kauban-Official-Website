@@ -6,40 +6,26 @@ import Button from "@/core/components/Button";
 import Image from "next/image";
 import { TbHomeHand } from "react-icons/tb";
 import RESIDENCES from "@/core/constants/residences";
-import { useState } from "react";
-import ResponsiveNav from "./ResponsiveNav";
-import { isMobile } from "react-device-detect";
-import { AnimatePresence } from "framer-motion";
-import Stairs from "@/core/components/Stairs";
+import { CiMenuFries } from "react-icons/ci";
+import { useEffect, useState } from "react";
 import Menu from "./Menu";
 
 const Navbar = () => {
-	const [menuIsOpen, setMenuIsOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 
-	if (isMobile) {
-		return (
-			<div>
-				<ResponsiveNav
-					openMenu={() => {
-						setMenuIsOpen(true);
-					}}
-				></ResponsiveNav>
-
-				{menuIsOpen && (
-					<>
-						<Stairs />
-						<Menu
-							closeMenu={() => {
-								setMenuIsOpen(false);
-							}}
-						/>
-					</>
-				)}
-			</div>
-		);
-	}
+	useEffect(() => {
+		open
+			? (document.body.style.overflow = "hidden")
+			: (document.body.style.overflow = "auto");
+	}, [open]);
 
 	const latestProjectId = RESIDENCES[RESIDENCES.length - 1].id;
+
+	if (open) {
+		return (
+			<Menu setOpen={setOpen} latestProjectId={latestProjectId}></Menu>
+		);
+	}
 
 	return (
 		<nav className={styles.navbar}>
@@ -50,6 +36,7 @@ const Navbar = () => {
 					width={174}
 					height={68}
 					priority
+					className={styles.logo_image}
 				></Image>
 			</Link>
 
@@ -63,12 +50,24 @@ const Navbar = () => {
 				})}
 			</div>
 
-			<Button
-				type="filled"
-				label="Go to Latest Project"
-				icon={TbHomeHand}
-				href={`/projects/${latestProjectId}`}
-			></Button>
+			<div className={styles.navbar_button}>
+				<Button
+					type="filled"
+					label="Go to Latest Project"
+					icon={TbHomeHand}
+					href={`/projects/${latestProjectId}`}
+				></Button>
+			</div>
+
+			<div className={styles.hamburger_menu}>
+				<button
+					onClick={() => {
+						setOpen(true);
+					}}
+				>
+					<CiMenuFries size={32} color="white" />
+				</button>
+			</div>
 		</nav>
 	);
 };

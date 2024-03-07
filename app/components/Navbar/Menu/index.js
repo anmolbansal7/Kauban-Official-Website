@@ -1,28 +1,42 @@
-import React from "react";
-import { motion } from "framer-motion";
 import styles from "./styles.module.css";
-import { opacity, slideLeft, mountAnim } from "@/core/components/Stairs/anim";
+import Link from "next/link";
+import { NAVBAR_LINKS } from "@/core/constants";
+import Button from "@/core/components/Button";
+import { IoClose } from "react-icons/io5";
+import { TbHomeHand } from "react-icons/tb";
 
-const Menu = ({ closeMenu }) => {
+const Menu = ({ setOpen = () => {}, latestProjectId = "" }) => {
 	return (
-		<div>
-			<div className={styles.header}>
-				<motion.svg
-					variants={slideLeft}
-					{...mountAnim}
-					onClick={() => {
-						closeMenu();
-					}}
-					width="68"
-					height="68"
-					viewBox="0 0 68 68"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path d="M1.5 1.5L67 67" stroke="white" />
+		<div className={styles.menu}>
+			<button
+				className={styles.close_button}
+				onClick={() => {
+					setOpen(false);
+				}}
+			>
+				<IoClose size={32} />
+			</button>
 
-					<path d="M66.5 1L0.999997 66.5" stroke="white" />
-				</motion.svg>
+			<div className={styles.links}>
+				{NAVBAR_LINKS.map((link) => {
+					return (
+						<Link
+							href={link.href}
+							key={link.key}
+							onClick={() => setOpen(false)}
+						>
+							{link.label}
+						</Link>
+					);
+				})}
+				<div onClick={() => setOpen(false)}>
+					<Button
+						type="filled"
+						label="Go to Latest Project"
+						icon={TbHomeHand}
+						href={`/projects/${latestProjectId}`}
+					></Button>
+				</div>
 			</div>
 		</div>
 	);

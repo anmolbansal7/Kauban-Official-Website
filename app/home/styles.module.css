@@ -11,10 +11,6 @@
 	padding-bottom: 48px;
 }
 
-.logo {
-	display: none;
-}
-
 .content {
 	color: var(--white);
 	font-weight: 500;
@@ -62,19 +58,13 @@
 
 @media only screen and (max-width: 576px) {
 	/* iPhone 14 Pro Max */
-	.landing {
-		padding: 48px 24px;
-		min-height: 20vh;
-	}
-	.logo {
-		display: block;
-		margin-top: 24px;
-		padding-bottom: 64px;
-	}
 	.content {
 		display: none;
 	}
-	.mouse {
-		display: none;
+
+	.landing {
+		justify-content: flex-end;
+		height: 90vh;
+		min-height: 0vh;
 	}
 }
