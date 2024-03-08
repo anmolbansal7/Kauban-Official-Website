@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { NAVBAR_LINKS, SOCIAL_LINKS } from "@/core/constants";
+import { NAVBAR_LINKS, SOCIAL_LINKS } from "@/constants";
 
 import { CiLocationArrow1, CiLocationOn } from "react-icons/ci";
 

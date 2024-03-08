@@ -2,7 +2,7 @@ import Button from "@/core/components/Button";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import RESIDENCES from "@/core/constants/residences";
+import RESIDENCES from "@/constants/residences";
 
 const Projects = () => {
 	return (

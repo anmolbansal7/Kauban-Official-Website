@@ -1,5 +1,5 @@
 import TeamCard from "@/core/components/TeamCard";
-import TEAM from "@/core/constants/team";
+import TEAM from "@/constants/team";
 import ImageHeader from "@/core/components/ImageHeader";
 import ImageFooter from "@/core/components/ImageFooter";
 

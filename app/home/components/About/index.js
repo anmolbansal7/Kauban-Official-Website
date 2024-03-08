@@ -1,4 +1,4 @@
-import ABOUT_CONTENT from "@/core/constants/about";
+import ABOUT_CONTENT from "@/constants/about";
 import styles from "./styles.module.css";
 
 const About = () => {

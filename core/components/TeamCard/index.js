@@ -17,6 +17,7 @@ const TeamCard = ({ team_member = {} }) => {
 					width={220}
 					height={280}
 					priority
+					className="image_hover"
 				></Image>
 			</div>
 			<div className={styles.card_info}>

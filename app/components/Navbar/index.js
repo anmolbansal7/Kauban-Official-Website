@@ -1,11 +1,11 @@
 "use client";
-import { NAVBAR_LINKS } from "@/core/constants";
+import { NAVBAR_LINKS } from "@/constants";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import Button from "@/core/components/Button";
 import Image from "next/image";
 import { TbHomeHand } from "react-icons/tb";
-import RESIDENCES from "@/core/constants/residences";
+import RESIDENCES from "@/constants/residences";
 import { CiMenuFries } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";

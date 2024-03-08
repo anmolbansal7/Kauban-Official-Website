@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { NAVBAR_LINKS } from "@/core/constants";
+import { NAVBAR_LINKS } from "@/constants";
 import Button from "@/core/components/Button";
 import { IoClose } from "react-icons/io5";
 import { TbHomeHand } from "react-icons/tb";

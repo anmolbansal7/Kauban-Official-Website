@@ -20,11 +20,11 @@ export const SOCIAL_LINKS = [
 	{
 		key: "Instagram",
 		label: "Instagram",
-		href: "https://www.instagram.com/kaubandev",
+		href: "https://www.instagram.com/kaubandevelopers",
 	},
 	{
 		key: "Linkedin",
 		label: "Linkedin",
-		href: "",
+		href: "https://www.linkedin.com/company/kauban-developers",
 	},
 ];

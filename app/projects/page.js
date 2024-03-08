@@ -1,4 +1,4 @@
-import RESIDENCES from "@/core/constants/residences";
+import RESIDENCES from "@/constants/residences";
 import styles from "./styles.module.css";
 import ProjectCard from "@/core/components/ProjectCard";
 import ImageHeader from "@/core/components/ImageHeader";
