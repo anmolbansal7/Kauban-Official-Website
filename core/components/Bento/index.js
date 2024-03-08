@@ -1,5 +1,3 @@
-import React from "react";
-import BentoBox from "../BentoBox";
 import styles from "./styles.module.css";
 
 const TYPES = {

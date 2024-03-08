@@ -1,4 +1,3 @@
-import Image from "next/image";
 import About from "./components/About";
 import End from "./components/End";
 import Info from "./components/Info";
@@ -19,13 +18,6 @@ const Home = () => {
 					className={styles.video}
 				/>
 			</div>
-
-			{/* <div className={styles.landing}>
-				<div className={styles.content}>
-					Where Dreams Unfold <br /> and Memories Begin
-				</div>
-				<div className={styles.mouse} />
-			</div> */}
 			<Info />
 			<About />
 			<Projects />

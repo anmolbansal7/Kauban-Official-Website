@@ -81,6 +81,7 @@ a {
 	position: relative !important;
 }
 
+a:focus,
 button:focus {
 	outline: none;
 	box-shadow: none;

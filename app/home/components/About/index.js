@@ -1,4 +1,4 @@
-import CONTENT from "./content";
+import ABOUT_CONTENT from "@/core/constants/about";
 import styles from "./styles.module.css";
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
 			</div>
 
 			<div className={styles.cards}>
-				{CONTENT.map((item) => {
+				{ABOUT_CONTENT.map((item) => {
 					const Icon = item?.icon;
 					return (
 						<div className={styles.card} key={item.heading}>

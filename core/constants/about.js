@@ -5,7 +5,7 @@ import { FaHammer } from "react-icons/fa6";
 import { FaPaintRoller } from "react-icons/fa6";
 import { FaBuildingShield } from "react-icons/fa6";
 
-const CONTENT = [
+const ABOUT_CONTENT = [
 	{
 		icon: FaHammer,
 		heading: "Bespoke Craftsmanship",
@@ -44,4 +44,4 @@ const CONTENT = [
 	},
 ];
 
-export default CONTENT;
+export default ABOUT_CONTENT;
