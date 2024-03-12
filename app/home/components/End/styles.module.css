@@ -24,7 +24,7 @@
 	color: var(--gray);
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	/* iPhone 14 Pro Max */
 	.end {
 		flex-direction: column;
@@ -41,5 +41,17 @@
 	}
 	.end_right {
 		flex: 1;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.end {
+		padding: 24px 72px;
+	}
+	.end_left {
+		flex: 1;
+	}
+	.end_right {
+		flex: 2;
 	}
 }

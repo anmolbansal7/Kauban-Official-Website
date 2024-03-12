@@ -67,7 +67,7 @@
 	font-weight: 500;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	/* iPhone 14 Pro Max */
 	.projects {
 		padding: 24px 36px;
@@ -81,5 +81,11 @@
 	.card {
 		width: 100%;
 		margin-bottom: 48px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.projects {
+		padding: 24px 72px;
 	}
 }

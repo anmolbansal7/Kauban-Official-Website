@@ -28,7 +28,7 @@
 	height: 400px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	/* iPhone 14 Pro Max */
 	.info {
 		padding: 24px 36px;
@@ -44,5 +44,20 @@
 	.info_header_sub {
 		width: 100%;
 		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.info {
+		padding: 24px 72px;
+	}
+	.info_header {
+		align-items: center;
+	}
+	.info_header_main {
+		width: 50%;
+	}
+	.info_header_sub {
+		width: 50%;
 	}
 }
