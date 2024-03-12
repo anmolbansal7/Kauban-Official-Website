@@ -2,7 +2,7 @@ import Button from "@/core/components/Button";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import RESIDENCES from "@/constants/residences";
+import RESIDENCES_CONTENT from "@/constants/residences";
 
 const Projects = () => {
 	return (
@@ -29,7 +29,7 @@ const Projects = () => {
 			</div>
 
 			<div className={styles.cards}>
-				{RESIDENCES.slice(-3).map((item) => {
+				{RESIDENCES_CONTENT.slice(-3).map((item) => {
 					const link_url = "projects/" + item?.id;
 					return (
 						<Link

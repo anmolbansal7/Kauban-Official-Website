@@ -1,4 +1,4 @@
-const TEAM = [
+const TEAM_INFO = [
 	{
 		name: "Subodh Sharma",
 		image_url: "/assets/info_image.png",
@@ -13,4 +13,4 @@ const TEAM = [
 	},
 ];
 
-export default TEAM;
+export default TEAM_INFO;

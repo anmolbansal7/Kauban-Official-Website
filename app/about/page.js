@@ -1,5 +1,5 @@
 import TeamCard from "@/core/components/TeamCard";
-import TEAM from "@/constants/team";
+import TEAM_INFO from "@/constants/team";
 import ImageHeader from "@/core/components/ImageHeader";
 import ImageFooter from "@/core/components/ImageFooter";
 
@@ -63,7 +63,7 @@ const Page = () => {
 			<div className={styles.team}>
 				<p className={styles.heading}>Leadership</p>
 				<div className={styles.card_container}>
-					{TEAM.map((team_member) => (
+					{TEAM_INFO.map((team_member) => (
 						<TeamCard
 							key={team_member.name}
 							team_member={team_member}

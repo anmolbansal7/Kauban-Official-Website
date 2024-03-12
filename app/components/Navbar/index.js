@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "@/core/components/Button";
 import Image from "next/image";
 import { TbHomeHand } from "react-icons/tb";
-import RESIDENCES from "@/constants/residences";
+import RESIDENCES_CONTENT from "@/constants/residences";
 import { CiMenuFries } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
@@ -19,7 +19,8 @@ const Navbar = () => {
 			: (document.body.style.overflow = "auto");
 	}, [open]);
 
-	const latestProjectId = RESIDENCES[RESIDENCES.length - 1].id;
+	const latestProjectId =
+		RESIDENCES_CONTENT[RESIDENCES_CONTENT.length - 1].id;
 
 	if (open) {
 		return (

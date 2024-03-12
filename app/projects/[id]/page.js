@@ -1,4 +1,4 @@
-import RESIDENCES from "@/constants/residences";
+import RESIDENCES_CONTENT from "@/constants/residences";
 import ImageHeader from "@/core/components/ImageHeader";
 
 import styles from "./styles.module.css";
@@ -9,7 +9,7 @@ import ImageFooter from "@/core/components/ImageFooter";
 const Page = ({ params = {} }) => {
 	const id = params?.id;
 
-	const residence = RESIDENCES.find(
+	const residence = RESIDENCES_CONTENT.find(
 		(residence) => String(residence.id) === id
 	);
 

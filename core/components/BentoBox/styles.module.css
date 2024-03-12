@@ -26,3 +26,11 @@
 .small {
 	grid-column-end: span 1; /* This box will also span 1 column */
 }
+
+@media only screen and (max-width: 576px) {
+	.large,
+	.medium,
+	.small {
+		grid-column-end: span 3;
+	}
+}

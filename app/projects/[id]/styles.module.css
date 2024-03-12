@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-	.bento_container {
-		display: none;
+	.container {
+		padding: 24px 36px;
 	}
 }

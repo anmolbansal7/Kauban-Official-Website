@@ -1,4 +1,4 @@
-import RESIDENCES from "@/constants/residences";
+import RESIDENCES_CONTENT from "@/constants/residences";
 import styles from "./styles.module.css";
 import ProjectCard from "@/core/components/ProjectCard";
 import ImageHeader from "@/core/components/ImageHeader";
@@ -12,10 +12,10 @@ const Page = () => {
 				heading="Projects"
 			></ImageHeader>
 			<div className={styles.card_container}>
-				{RESIDENCES.length == "0" ? (
+				{RESIDENCES_CONTENT.length == "0" ? (
 					<div>No Projects Found</div>
 				) : (
-					RESIDENCES.map((project) => {
+					RESIDENCES_CONTENT.map((project) => {
 						return (
 							<ProjectCard project={project} key={project?.id} />
 						);

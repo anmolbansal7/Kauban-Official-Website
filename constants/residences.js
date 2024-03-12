@@ -1,4 +1,4 @@
-const RESIDENCES = [
+const RESIDENCES_CONTENT = [
 	{
 		id: 1,
 		image: "/assets/info_image.png",
@@ -52,4 +52,4 @@ const RESIDENCES = [
 	},
 ];
 
-export default RESIDENCES;
+export default RESIDENCES_CONTENT;
