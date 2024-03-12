@@ -9,7 +9,7 @@ const Page = () => {
 	return (
 		<main>
 			<ImageHeader
-				image_url="/assets/info_image.png"
+				image_url="/assets/sample.png"
 				heading="Our Story"
 			></ImageHeader>
 			<div className={styles.about_info}>
@@ -71,7 +71,7 @@ const Page = () => {
 					))}
 				</div>
 			</div>
-			<ImageFooter image_url="/assets/info_image.png" />
+			<ImageFooter image_url="/assets/sample.png" />
 		</main>
 	);
 };

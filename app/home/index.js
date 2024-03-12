@@ -1,29 +1,22 @@
+import ImageHeader from "@/core/components/ImageHeader";
 import About from "./components/About";
 import End from "./components/End";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
-import styles from "./styles.module.css";
 import ImageFooter from "@/core/components/ImageFooter";
-import Image from "next/image";
 
 const Home = () => {
 	return (
 		<main>
-			<div className={styles.image_container}>
-				<Image
-					className={styles.image}
-					alt="Project"
-					src="/assets/info_image.png"
-					fill={true}
-					priority
-				/>
-				<div className={styles.mouse} />
-			</div>
+			<ImageHeader
+				type="landing"
+				image_url="/assets/sample.png"
+			></ImageHeader>
 			<Info />
 			<About />
 			<Projects />
 			<End />
-			<ImageFooter image_url="/assets/info_image.png" />
+			<ImageFooter image_url="/assets/sample.png" />
 		</main>
 	);
 };

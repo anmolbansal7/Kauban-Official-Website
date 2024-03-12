@@ -1,7 +1,7 @@
 const RESIDENCES_CONTENT = [
 	{
 		id: 1,
-		image: "/assets/info_image.png",
+		image: "/assets/sample.png",
 		label: "P48 - Our First One",
 		description:
 			"Reside in Prominence. Revel in Nature. 3 BHK Luxury Floors in Sector 48, Gurugram.",
@@ -18,7 +18,7 @@ const RESIDENCES_CONTENT = [
 	},
 	{
 		id: 2,
-		image: "/assets/info_image.png",
+		image: "/assets/sample.png",
 		label: "P16 - Elegance of South City",
 		description:
 			"Reside in Prominence. Revel in Nature. 4 BHK Luxury Floors in South City 1, Gurugram.",
@@ -35,7 +35,7 @@ const RESIDENCES_CONTENT = [
 	},
 	{
 		id: 3,
-		image: "/assets/info_image.png",
+		image: "/assets/sample.png",
 		label: "Modular Heaven in DLF",
 		description:
 			"Reside in Prominence. Revel in Nature. 4 BHK Luxury Floors in DLF Phase 1, Gurugram.",

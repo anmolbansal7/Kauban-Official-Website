@@ -8,7 +8,7 @@ const Page = () => {
 	return (
 		<main>
 			<ImageHeader
-				image_url="/assets/info_image.png"
+				image_url="/assets/sample.png"
 				heading="Projects"
 			></ImageHeader>
 			<div className={styles.card_container}>
@@ -22,7 +22,7 @@ const Page = () => {
 					})
 				)}
 			</div>
-			<ImageFooter image_url="/assets/info_image.png" />
+			<ImageFooter image_url="/assets/sample.png" />
 		</main>
 	);
 };

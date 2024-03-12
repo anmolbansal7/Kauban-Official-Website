@@ -26,10 +26,10 @@ const Page = ({ params = {} }) => {
 	return (
 		<main>
 			<ImageHeader
-				image_url="/assets/info_image.png"
+				type="project"
+				image_url="/assets/sample.png"
 				heading={label}
-				project={true}
-				project_info={project_info}
+				info={project_info}
 			></ImageHeader>
 			<div className={styles.container}>
 				<div className={styles.bento_container}>
@@ -45,7 +45,7 @@ const Page = ({ params = {} }) => {
 					<BentoBox size="small" />
 				</div>
 			</div>
-			<ImageFooter image_url="/assets/info_image.png" />
+			<ImageFooter image_url="/assets/sample.png" />
 		</main>
 	);
 };
