@@ -4,19 +4,20 @@ import Info from "./components/Info";
 import Projects from "./components/Projects";
 import styles from "./styles.module.css";
 import ImageFooter from "@/core/components/ImageFooter";
+import Image from "next/image";
 
 const Home = () => {
 	return (
 		<main>
-			<div className={styles.video_container}>
-				<div className={styles.mouse} />
-				<video
-					src={require("/public/videos/video.mp4")}
-					autoPlay
-					muted
-					loop
-					className={styles.video}
+			<div className={styles.image_container}>
+				<Image
+					className={styles.image}
+					alt="Project"
+					src="/assets/info_image.png"
+					fill={true}
+					priority
 				/>
+				<div className={styles.mouse} />
 			</div>
 			<Info />
 			<About />
