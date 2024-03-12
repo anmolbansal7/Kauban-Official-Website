@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NextTopLoader from "nextjs-toploader";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
 	title: "Kauban - Builder Floors in Gurugram",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				{children}
 				<Footer />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
