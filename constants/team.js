@@ -2,7 +2,7 @@ const TEAM = [
 	{
 		name: "Subodh Sharma",
 		image_url: "/assets/info_image.png",
-		designation: "Designated Partner",
+		designation: "Partner",
 		info: "Started this venture with an objective in mind to provide a dream home for life with honest commitments and transparency in deals.",
 	},
 	{

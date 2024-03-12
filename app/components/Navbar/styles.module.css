@@ -14,7 +14,13 @@
 	display: flex;
 	gap: 48px;
 }
-
+.single_link {
+	transition: 0.1s linear;
+	opacity: 0.9;
+}
+.single_link:hover {
+	opacity: 1;
+}
 .logo {
 	display: flex;
 	align-items: center;

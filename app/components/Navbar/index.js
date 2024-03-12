@@ -43,7 +43,11 @@ const Navbar = () => {
 			<div className={styles.links}>
 				{NAVBAR_LINKS.map((link) => {
 					return (
-						<Link href={link.href} key={link.key}>
+						<Link
+							href={link.href}
+							key={link.key}
+							className={styles.single_link}
+						>
 							{link.label}
 						</Link>
 					);

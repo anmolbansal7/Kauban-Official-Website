@@ -3,7 +3,6 @@ import ImageHeader from "@/core/components/ImageHeader";
 
 import styles from "./styles.module.css";
 import { notFound } from "next/navigation";
-import Bento from "@/core/components/Bento";
 import BentoBox from "@/core/components/BentoBox";
 import ImageFooter from "@/core/components/ImageFooter";
 
@@ -44,10 +43,6 @@ const Page = ({ params = {} }) => {
 					<BentoBox size="small" />
 					<BentoBox size="medium" />
 					<BentoBox size="small" />
-
-					{/* <Bento type="location"></Bento>
-					<Bento type="size"></Bento>
-					<Bento type="bhk"></Bento> */}
 				</div>
 			</div>
 			<ImageFooter image_url="/assets/info_image.png" />
