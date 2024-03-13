@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 const GridForImportant = ({
 	plot_size = "",
 	configuration = "",
-	area = "",
+	location = "",
 	possession = "",
 }) => {
 	return (
@@ -18,9 +18,9 @@ const GridForImportant = ({
 				<span className={styles.heading}>{configuration}</span>
 				<span className={styles.title_lower}></span>
 			</div>
-			<div className={`${styles.grid_item} ${styles.area}`}>
+			<div className={`${styles.grid_item} ${styles.location}`}>
 				<span className={styles.title_upper}>LOCATION</span>
-				<span className={styles.heading}>{area}</span>
+				<span className={styles.heading}>{location}</span>
 				<span className={styles.title_lower}></span>
 			</div>
 			<div className={`${styles.grid_item} ${styles.possession}`}>

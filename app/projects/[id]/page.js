@@ -26,7 +26,7 @@ const Page = ({ params = {} }) => {
 		number_of_tags = "",
 		plot_size = "",
 		configuration = "",
-		area = "",
+		location = "",
 		possession = "",
 		detailed_description = "",
 		highlights = [],
@@ -57,7 +57,7 @@ const Page = ({ params = {} }) => {
 				<GridForImportant
 					plot_size={plot_size}
 					configuration={configuration}
-					area={area}
+					location={location}
 					possession={possession}
 				/>
 

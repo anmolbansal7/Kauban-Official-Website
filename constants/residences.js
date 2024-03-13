@@ -2,17 +2,19 @@ const RESIDENCES_CONTENT = [
 	{
 		id: 1,
 		image: "/assets/sample.png",
-		label: "P48 - Our First One",
-		description:
-			"Reside in Prominence. Revel in Nature. 3 BHK Luxury Floors in Sector 48, Gurugram.",
+		image_gallery: [],
+		heading_image: "",
+		label: "P48",
+		description: "Some Description",
 		status: "Sold Out.",
-		tags: [
-			"Best in class finish",
-			"Modular Kitchen",
-			"Ground level parking",
-		],
-		bhk: "3 BHK",
-		size: "250 sq. yards",
+		number_of_tags: 3,
+		plot_size: "250 sq. yards",
+		configuration: "3 BHK",
+		location: "Sector 48, Gurugram",
+		possession: "January 2022",
+		detailed_description: "",
+		tags: [],
+		highlights: [],
 	},
 	{
 		id: 2,
@@ -28,6 +30,13 @@ const RESIDENCES_CONTENT = [
 		description:
 			"Luxurious, modern home, ideal for those who appreciate quality living.",
 		status: "Sold Out.",
+		number_of_tags: 4,
+		plot_size: "360 sq. yards",
+		configuration: "4 BHK + Lounge + Servant",
+		location: "South City 1, Gurugram",
+		possession: "January 2023",
+		detailed_description:
+			"This architectural masterpiece is tailored for the discerning elite, emphasizing quality at every stage of its construction. A blend of cutting-edge design and advanced technology, this residence offers the pinnacle of luxury living in the vibrant millennium city of India. It stands as a testament to unparalleled craftsmanship, promising a dream home for individuals across all strata of society seeking the finest living experience in a prime location.",
 		tags: [
 			"Seismic-resistant structure",
 			"Vastu-compliant layout",
@@ -46,13 +55,6 @@ const RESIDENCES_CONTENT = [
 			"Automatic start and stop water motors provision for each floor",
 			"Premium Italian marble flooring with the option for wooden flooring in one",
 		],
-		number_of_tags: 4,
-		plot_size: "360 sq. yards",
-		configuration: "4 BHK + Lounge + Servant",
-		area: "South City 1, Gurugram",
-		possession: "January 2023",
-		detailed_description:
-			"This architectural masterpiece is tailored for the discerning elite, emphasizing quality at every stage of its construction. A blend of cutting-edge design and advanced technology, this residence offers the pinnacle of luxury living in the vibrant millennium city of India. It stands as a testament to unparalleled craftsmanship, promising a dream home for individuals across all strata of society seeking the finest living experience in a prime location.",
 		highlights: [
 			"Situated in the prestigious South City 1, Gurugram",
 			"Secure gated community",
@@ -69,17 +71,19 @@ const RESIDENCES_CONTENT = [
 	{
 		id: 3,
 		image: "/assets/sample.png",
-		label: "Modular Heaven in DLF",
-		description:
-			"Reside in Prominence. Revel in Nature. 4 BHK Luxury Floors in DLF Phase 1, Gurugram.",
+		image_gallery: [],
+		heading_image: "",
+		label: "DLF",
+		description: "lorem ipsum",
 		status: "Possession Soon.",
-		tags: [
-			"Best in class finish",
-			"Modular Kitchen",
-			"Ground level parking",
-		],
-		bhk: "4 BHK",
-		size: "300 sq. yards",
+		number_of_tags: 3,
+		plot_size: "300 sq. yards",
+		configuration: "4 BHK",
+		location: "DLF Phase 1, Gurugram",
+		possession: "March 2024",
+		detailed_description: "",
+		tags: [],
+		highlights: [],
 	},
 ];
 
