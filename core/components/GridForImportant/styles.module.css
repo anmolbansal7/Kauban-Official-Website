@@ -1,0 +1,63 @@
+.grid_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+	padding: 16px 0px;
+	margin: 16px 0px;
+}
+
+.grid_item {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	text-align: center;
+	overflow: hidden;
+	background-color: var(--kauban-brown);
+	background-size: cover;
+	background-position: center;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 16px 24px;
+}
+
+.plot_size {
+	background-image: url("/assets/plot_size.jpg");
+}
+
+.configuration {
+	background-image: url("/assets/configuration.jpg");
+}
+
+.area {
+	background-image: url("/assets/location.jpg");
+}
+
+.possession {
+	background-image: url("/assets/possession.jpg");
+}
+
+.heading {
+	font-weight: 500;
+	font-size: var(--font-size-lg);
+}
+
+.title_upper {
+	font-weight: 500;
+	font-size: var(--font-size-xs);
+	text-align: left;
+}
+
+.title_lower {
+	font-weight: 500;
+	font-size: var(--font-size-xs);
+	text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid_container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

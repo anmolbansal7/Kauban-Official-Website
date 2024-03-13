@@ -1,6 +1,5 @@
 import styles from "./styles.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import Button from "../Button";
 import Image from "next/image";
 import Tag from "../Tag";
 
@@ -15,11 +14,12 @@ const ProjectCard = ({ project = {} }) => {
 		description = "",
 		status = "",
 		tags = [],
-		bhk = "",
-		size = "",
-		price = "",
-		price_hidden = false,
+		number_of_tags = 3,
+		plot_size = "",
+		configuration = "",
 	} = project;
+
+	const modified_tags = tags.slice(0, number_of_tags);
 
 	return (
 		<Link
@@ -49,28 +49,18 @@ const ProjectCard = ({ project = {} }) => {
 					<ul className={styles.information}>
 						<li>
 							<MdBed size={18} style={{ marginRight: "4px" }} />
-							{bhk}
+							{configuration}
 						</li>
 						<li>
 							<MdCottage
 								size={18}
 								style={{ marginRight: "4px" }}
 							/>
-							{size}
-						</li>
-						<li className={styles.price}>
-							Prices From: {price_hidden ? "On Request" : price}
+							{plot_size}
 						</li>
 					</ul>
-					<Tag content={tags}></Tag>
+					<Tag content={modified_tags}></Tag>
 				</div>
-
-				{/* <Button
-					type="fill"
-					// label="View Details"
-					icon={MdOutlineArrowOutward}
-					href={`/projects/${id}`}
-				></Button> */}
 			</div>
 		</Link>
 	);
