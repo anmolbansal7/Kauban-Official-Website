@@ -10,6 +10,14 @@
 	overflow: hidden;
 }
 
+.image_container img {
+	transition: 0.1s linear;
+}
+
+.image_container img:hover {
+	transform: scale(1.05);
+}
+
 .status {
 	position: absolute;
 	padding: 6px 12px;

@@ -41,14 +41,14 @@ const Footer = () => {
 								style={{ marginRight: "4px", fontSize: "18px" }}
 							/>
 							<a href="mailto:kaubandevelopers@gmail.com">
-								kaubandevelopers@gmail.com
+								kaubandev@gmail.com
 							</a>
 						</span>
 						<span>
 							<CiLocationOn
 								style={{ marginRight: "4px", fontSize: "18px" }}
 							/>{" "}
-							Gurugram, Haryana, India
+							346, Basement, Sector 38, Gurugram, Haryana
 						</span>
 					</span>
 				</div>

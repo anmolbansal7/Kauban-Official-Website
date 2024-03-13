@@ -22,10 +22,8 @@ const RESIDENCES_CONTENT = [
 		image_gallery: [
 			"/assets/projects/2/elevation1.jpg",
 			"/assets/projects/2/elevation2.jpg",
-			"/assets/projects/2/elevation3.jpg",
-			"/assets/projects/2/elevation4.jpg",
 		],
-		heading_image: "/assets/projects/2/elevation_night.jpg",
+		heading_image: "/assets/projects/2/elevation.jpg",
 		label: "P-16, South City-1",
 		description:
 			"Luxurious, modern home, ideal for those who appreciate quality living.",
@@ -70,9 +68,12 @@ const RESIDENCES_CONTENT = [
 	},
 	{
 		id: 3,
-		image: "/assets/sample.png",
-		image_gallery: [],
-		heading_image: "",
+		image: "/assets/projects/3/elevation.jpg",
+		image_gallery: [
+			"/assets/projects/3/elevation1.jpg",
+			"/assets/projects/3/elevation2.jpg",
+		],
+		heading_image: "/assets/projects/3/elevation.jpg",
 		label: "DLF",
 		description: "lorem ipsum",
 		status: "Possession Soon.",

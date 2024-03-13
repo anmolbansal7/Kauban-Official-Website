@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import RESIDENCES_CONTENT from "@/constants/residences";
+import Image from "next/image";
 
 const Projects = () => {
 	return (
@@ -40,12 +41,15 @@ const Projects = () => {
 							<div className={styles.status}>
 								{item?.status.toUpperCase()}
 							</div>
-							<div
-								className={styles.card_image}
-								style={{
-									backgroundImage: `url(${item?.image})`,
-								}}
-							/>
+							<div className={styles.card_image}>
+								<Image
+									className="custom-img"
+									alt=""
+									src={item?.image}
+									fill={true}
+									priority
+								></Image>
+							</div>
 
 							<div className={styles.card_label}>
 								{item?.label}
