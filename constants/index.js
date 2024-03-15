@@ -16,6 +16,11 @@ export const NAVBAR_LINKS = [
 	},
 ];
 
+export const DETAILS = {
+	email: "kaubandev@gmail.com",
+	address: "346, Basement, Sector 38, Gurugram, Haryana",
+};
+
 export const SOCIAL_LINKS = [
 	{
 		key: "Instagram",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import Link from "next/link";
-import { NAVBAR_LINKS, SOCIAL_LINKS } from "@/constants";
+import { DETAILS, NAVBAR_LINKS, SOCIAL_LINKS } from "@/constants";
 
 import { CiLocationArrow1, CiLocationOn } from "react-icons/ci";
 
@@ -40,15 +40,15 @@ const Footer = () => {
 							<CiLocationArrow1
 								style={{ marginRight: "4px", fontSize: "18px" }}
 							/>
-							<a href="mailto:kaubandevelopers@gmail.com">
-								kaubandev@gmail.com
+							<a href={`mailto:${DETAILS.email}`}>
+								{DETAILS.email}
 							</a>
 						</span>
 						<span>
 							<CiLocationOn
 								style={{ marginRight: "4px", fontSize: "18px" }}
 							/>{" "}
-							346, Basement, Sector 38, Gurugram, Haryana
+							{DETAILS.address}
 						</span>
 					</span>
 				</div>
