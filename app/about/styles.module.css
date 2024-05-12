@@ -1,0 +1,68 @@
+.about_info {
+	padding: 24px 100px;
+	color: var(--gray);
+	font-size: var(--font-size-md1);
+}
+
+.about_info p {
+	margin-top: 36px;
+}
+
+.about_info h4 {
+	margin-top: 48px;
+}
+
+.large_emphasized {
+	font-size: var(--font-size-lg);
+	color: var(--black);
+	font-weight: 500;
+	padding: 4px;
+	transition: 0.2s ease;
+}
+
+.large_emphasized:hover {
+	background-color: var(--kauban-brown);
+}
+
+.team {
+	padding: 36px 100px;
+}
+
+p.emphasized {
+	font-weight: 500;
+	font-size: var(--font-size-lg);
+	color: var(--black);
+}
+
+p.heading {
+	font-size: var(--font-size-xl);
+	font-weight: 500;
+}
+
+.card_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+	.about_info,
+	.team {
+		padding: 24px 36px;
+	}
+	.card_container {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.about_info,
+	.team {
+		padding: 24px 72px;
+	}
+	.card_container {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,88 @@
+:root {
+	/* colors */
+	--kauban-brown: #d39f75;
+	--black: #000000;
+	--white: #ffffff;
+	--gray: #4f4f4f;
+
+	--font-family: "Mazzard", sans-serif;
+	--font-size-xxl: 46px; /* max */
+	--font-size-xl: 38px; /* page headings */
+	--font-size-lg: 28px; /* body headings */
+	--font-size-md1: 20px; /* special */
+	--font-size-md: 18px; /* body */
+	--font-size-sm: 16px; /* less than body */
+	--font-size-xs: 14px; /* pills */
+}
+
+@font-face {
+	font-family: "Mazzard";
+	src: url("/fonts/MazzardM-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Mazzard";
+	src: url("/fonts/MazzardM-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Mazzard";
+	src: url("/fonts/MazzardM-Regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Mazzard";
+	src: url("/fonts/MazzardM-Thin.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	line-height: 150%;
+}
+
+html,
+body {
+	max-width: 100vw;
+	font-family: "Mazzard", sans-serif;
+	font-size: var(--font-size-md);
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.emphasized {
+	color: var(--black);
+	font-weight: 500;
+	padding: 4px;
+	transition: 0.2s ease;
+}
+
+.emphasized:hover {
+	background-color: var(--kauban-brown);
+}
+
+.custom-img {
+	object-fit: cover;
+	width: 100% !important;
+	height: 100% !important;
+	position: relative !important;
+}
+
+a:focus,
+button:focus {
+	outline: none;
+	box-shadow: none;
+}

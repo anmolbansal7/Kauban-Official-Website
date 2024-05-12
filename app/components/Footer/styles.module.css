@@ -1,0 +1,86 @@
+.footer {
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer_main {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 100px 64px 100px;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex: 2;
+}
+
+.about {
+	font-size: var(--font-size-md);
+	width: 60%;
+	color: var(--gray);
+}
+
+.contact span {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding-bottom: 12px;
+}
+
+.links {
+	flex: 1;
+	margin-top: 48px;
+	display: flex;
+	gap: 100px;
+}
+
+.links_section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	color: var(--gray);
+}
+
+.links_heading {
+	font-size: var(--font-size-md1);
+	font-weight: 500;
+	color: var(--black);
+}
+
+.registered {
+	background-color: #f8f8f8;
+	padding: 24px 100px;
+	font-weight: 500;
+	font-size: var(--font-size-sm);
+}
+
+@media only screen and (max-width: 768px) {
+	/* iPhone 14 Pro Max */
+	.footer_main {
+		flex-direction: column;
+		padding: 24px 36px;
+	}
+	.about {
+		width: 100%;
+	}
+	.registered {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.footer_main {
+		padding: 24px 72px;
+	}
+	.about {
+		width: 100%;
+	}
+	.registered {
+		padding: 24px 72px;
+		text-align: center;
+	}
+}

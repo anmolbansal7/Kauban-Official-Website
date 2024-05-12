@@ -1,0 +1,30 @@
+.button {
+	border-radius: 24px;
+	padding: 14px 24px 12px 24px;
+	display: flex;
+	font-size: var(--font-size-sm);
+	font-family: var(--font-family);
+	font-weight: 500;
+	transition: ease 0.5s;
+	cursor: pointer;
+	color: var(--gray);
+}
+
+.button_hollow {
+	border: 2px solid #cdcdcd;
+	background-color: transparent;
+}
+
+.button_hollow:hover {
+	color: var(--black);
+	border: 2px solid #cdcdcd;
+}
+
+.button_filled {
+	border: none;
+	background-color: var(--white);
+}
+
+.button_filled:hover {
+	color: var(--black);
+}
