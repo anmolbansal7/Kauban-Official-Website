@@ -43,7 +43,7 @@ const Page = () => {
 
 				<p>
 					At Kauban, our mission is to redefine the concept of home,
-					transforming it into a sanctuary{" "}
+					transforming it into a sanctuary
 					<span className="emphasized">
 						where companionship flourishes and memories are created.
 					</span>
