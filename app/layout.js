@@ -5,6 +5,7 @@ import NextTopLoader from "nextjs-toploader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Head from "next/head";
+import Whatsapp from "@/core/components/WhatsApp";
 
 export const metadata = {
 	title: "Kauban - Builder Floors in Gurugram",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
 				<NextTopLoader color="#d39f75" />
 				<Navbar />
 				{children}
+				<Whatsapp />
 				<Footer />
 				<SpeedInsights />
 			</body>

@@ -23,6 +23,11 @@ export const DETAILS = {
 
 export const SOCIAL_LINKS = [
 	{
+		key: "Phone",
+		label: "Call Us",
+		href: "tel:+918448607879",
+	},
+	{
 		key: "Instagram",
 		label: "Instagram",
 		href: "https://www.instagram.com/kaubandevelopers",
@@ -33,3 +38,8 @@ export const SOCIAL_LINKS = [
 		href: "https://www.linkedin.com/company/kauban-developers",
 	},
 ];
+
+export const WHATSAPP_DETAILS = {
+	phoneNumber: "+918448607879",
+	message: "Hello! I would like to get in touch with you.",
+};
